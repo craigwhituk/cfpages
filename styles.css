@@ -1,0 +1,41 @@
+/* Reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; }
+
+/* Hero & nav */
+.hero { background: #fafafa; padding: 40px 20px; text-align: center; }
+.nav { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+.logo { font-size: 1.8rem; font-weight: bold; color: #000; text-decoration: none; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: #333; text-decoration: none; font-weight: 500; }
+.hero-content h1 { margin: 20px 0; font-size: 2.5rem; }
+.hero-content p { font-size: 1.1rem; margin-bottom: 20px; }
+.btn { display: inline-block; padding: 12px 24px; border-radius: 6px; font-weight: 600; text-decoration: none; }
+.btn.primary { background: #0070f3; color: #fff; }
+.btn.secondary { border: 2px solid #0070f3; color: #0070f3; }
+
+/* Sections */
+.section { padding: 60px 20px; max-width: 900px; margin: 0 auto; }
+.section h2 { font-size: 2rem; margin-bottom: 20px; }
+
+/* About area list */
+.service-area { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding-left: 0; }
+.service-area li { background: #eaeaea; padding: 6px 12px; border-radius: 4px; }
+
+/* Fleet tabs */
+.fleet-tabs { display: flex; gap: 10px; margin-bottom: 20px; }
+.tab-btn { background: transparent; border: none; font-size: 1.1rem; padding: 10px; cursor: pointer; }
+.tab-btn.active { border-bottom: 3px solid #0070f3; font-weight: bold; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* Contact & footer */
+.contact-ctas { display: flex; gap: 10px; margin: 15px 0; }
+.map { margin-top: 20px; height: 300px; background: #ddd; /* placeholder */ }
+.footer { background: #fafafa; padding: 20px; text-align: center; font-size: 0.9rem; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav { flex-direction: column; gap: 10px; }
+  .hero-content h1 { font-size: 2rem; }
+}
